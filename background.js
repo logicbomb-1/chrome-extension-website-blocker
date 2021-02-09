@@ -2,7 +2,7 @@
 
 // first time installed code
 chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({data: ["*://wizikal.website/*"]}, function() {
+    chrome.storage.sync.set({data: ["*://evilzone.org/*"]}, function() {
       getUrls() 
     })
 })
@@ -28,19 +28,11 @@ function getUrls() {
       var burl1 = result["data"];
       var str1 = burl1.toString();  
       var burl3= str1.split(",");
-      console.log(burl3);
-      console.log(burl3[1]);      
-      //blockUrls(burl3);
-      //alert(burl3[1]);
-      //var rv = {}; 
-      /*for (var i = 0; i < burl3.length; ++i) 
+      for (var i = 0; i < burl3.length; ++i) 
       {
        rv[i] = burl3[i];
       }
-      Object.values(result["data"]));
-      */
-      //blockUrls(Object.values(rv));
-      blockUrls(Object.values(burl1));
+      blockUrls(Object.values(rv));
   })
 }
 
