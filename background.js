@@ -27,7 +27,7 @@ function getUrls() {
   chrome.storage.sync.get("data", function(result) {
           var burl1 = result["data"];
     var str1 = burl1.toString();  
-    //alert(burl2);  
+    alert(str1);  
     blockUrls(Object.values(str1));
     //blockUrls(result["data"]);
   })
