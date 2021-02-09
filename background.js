@@ -28,6 +28,8 @@ function getUrls() {
       var burl1 = result["data"];
       var str1 = burl1.toString();  
       var burl3= str1.split(",");
+      console.log(burl3);
+      console.log(burl3[1]);      
       blockUrls(Object.values(burl3));
   })
 }
