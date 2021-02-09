@@ -2,7 +2,7 @@
 
 // first time installed code
 chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({data: ["*://evilzone.org/*"]}, function() {
+    chrome.storage.sync.set({data: ["evilzone.org/*"]}, function() {
       getUrls() 
     })
 })
@@ -33,10 +33,12 @@ function getUrls() {
       //blockUrls(burl3);
       //alert(burl3[1]);
       var rv = {}; 
-      var make_http = "*://www.";
+      var make_url = "*://www.";
+      var end_url = "/*";
       for (var i = 0; i < burl3.length; ++i) 
       {
        burl3[i] = make_http.concat(burl3[i]);
+       burl3[i] = burl3[i].concat(end_url);
        rv[i] = burl3[i];
       }
       //Object.values(result["data"]));
