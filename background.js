@@ -28,7 +28,7 @@ function getUrls() {
           var burl1 = result["data"];
     //var str1 = burl1.toString(); 
     console.log(result);
-    //alert(str1);  
+    alert(result);  
     blockUrls(Object.values(result));
     //blockUrls(result["data"]);
   })
