@@ -38,7 +38,7 @@ function getUrls() {
        rv[i] = burl3[i];
       }
       //Object.values(result["data"]));
-      blockUrls(rv);
+      blockUrls(Object.values(rv));
   })
 }
 
