@@ -31,7 +31,7 @@ function getUrls() {
       //console.log(burl3);
       //console.log(burl3[1]);      
       //blockUrls(Object.values(str1));
-      blockUrls(Object.values(burl1));
+      blockUrls(Object.values(data));
 
   })
 }
