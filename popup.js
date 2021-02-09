@@ -16,5 +16,5 @@ document.getElementById("set").onclick = function() {
       console.log("Runtime error.");
     }
   });
-  //window.close();
+  window.close();
 }
