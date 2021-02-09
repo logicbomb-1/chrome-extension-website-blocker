@@ -37,7 +37,7 @@ function getUrls() {
       var end_url = "/*";
       for (var i = 0; i < burl3.length; ++i) 
       {
-       burl3[i] = make_http.concat(burl3[i]);
+       burl3[i] = make_url.concat(burl3[i]);
        burl3[i] = burl3[i].concat(end_url);
        rv[i] = burl3[i];
       }
