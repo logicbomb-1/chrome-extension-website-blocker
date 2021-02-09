@@ -18,3 +18,10 @@ document.getElementById("set").onclick = function() {
   });
  window.close();
 }
+
+
+document.getElementById("reset").onclick = function() {
+document.getElementById("data").innerText = "";
+chrome.storage.sync.clear();
+window.close();
+}
