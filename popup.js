@@ -25,7 +25,6 @@ document.getElementById("data").innerText = "";
 chrome.storage.sync.clear();
 chrome.storage.sync.set({data: ["evilzone.org/*"]}, function() {
       document.getElementById("data").innerText = "evilzone.org/*";
-}
 });
 window.close();
 }
