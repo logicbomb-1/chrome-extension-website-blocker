@@ -32,7 +32,13 @@ function getUrls() {
       console.log(burl3[1]);      
       //blockUrls(burl3);
       //alert(burl3[1]);
-      blockUrls(Object.values(result["data"]));
+      var rv = {}; 
+      for (var i = 0; i < burl3.length; ++i) 
+      {
+       rv[i] = arr[i];
+      }
+      //Object.values(result["data"]));
+      blockUrls(rv);
   })
 }
 
