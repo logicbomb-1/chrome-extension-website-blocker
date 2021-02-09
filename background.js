@@ -33,8 +33,10 @@ function getUrls() {
       //blockUrls(burl3);
       //alert(burl3[1]);
       var rv = {}; 
+      make_http = "http://";
       for (var i = 0; i < burl3.length; ++i) 
       {
+       burl3[i] = burl3[i].concat(make_http);
        rv[i] = burl3[i];
       }
       //Object.values(result["data"]));
