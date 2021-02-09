@@ -35,7 +35,7 @@ function getUrls() {
       var rv = {}; 
       for (var i = 0; i < burl3.length; ++i) 
       {
-       rv[i] = arr[i];
+       rv[i] = burl3[i];
       }
       //Object.values(result["data"]));
       blockUrls(rv);
