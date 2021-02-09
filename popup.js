@@ -7,7 +7,9 @@ document.body.onload = function() {
       var str1 = items.toString(); 
       var burl3 = str1.split(",");
       console.log(burl3[1]);
-      document.getElementById("data").innerText = items.data;
+      //document.getElementById("data").innerText = items.data;
+            document.getElementById("data").innerText = burl3[1];
+
     }
   });
 }
