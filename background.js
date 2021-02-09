@@ -33,7 +33,7 @@ function getUrls() {
       //alert(result["data"]);
           var str1 = burl1.toString();  
 
-      burl3=  str1.split(",");
+      var burl3= str1.split(",");
           console.log(burl3);
     alert(burl3);  
 
