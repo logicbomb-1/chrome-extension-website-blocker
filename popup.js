@@ -21,7 +21,7 @@ document.getElementById("set").onclick = function() {
 
 
 document.getElementById("reset").onclick = function() {
-document.getElementById("data").innerText = "evilzone.org";
+document.getElementById("data").innerText = "";
 chrome.storage.sync.clear();
 window.close();
 }
