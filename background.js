@@ -25,7 +25,11 @@ function blockUrls(blockedUrls) {
 // gets list of urls from storage
 function getUrls() {
   chrome.storage.sync.get("data", function(result) {
-    blockUrls(result["data"])
+          var burl1 = result["data"];
+    var str1 = burl1.toString();  
+    //alert(burl2);  
+    blockUrls(Object.values(str1));
+    //blockUrls(result["data"]);
   })
 }
 
