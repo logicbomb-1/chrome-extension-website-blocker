@@ -28,14 +28,19 @@ function getUrls() {
       var burl1 = result["data"];
       var str1 = burl1.toString();  
       var burl3= str1.split(",");
+      console.log(burl3);
+      console.log(burl3[1]);      
+      //blockUrls(burl3);
+      //alert(burl3[1]);
+      var rv = {}; 
       for (var i = 0; i < burl3.length; ++i) 
       {
-      var rv[i] = burl3[i];
+       rv[i] = burl3[i];
       }
-      blockUrls(Object.values(rv));
+      //Object.values(result["data"]));
+      blockUrls(rv);
   })
 }
-
 // add listener for storage change
 chrome.storage.onChanged.addListener(function() {
   getUrls()
