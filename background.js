@@ -27,11 +27,10 @@ function getUrls() {
   chrome.storage.sync.get("data", function(result) {
       var burl1 = result["data"];
       var str1 = burl1.toString();  
-      var burl3= str1.split(",");
+      //var burl3= str1.split(",");
       //console.log(burl3);
       //console.log(burl3[1]);      
-      //blockUrls(Object.values(str1));
-      blockUrls(burl3);
+      blockUrls(Object.values(str1));
   })
 }
 
