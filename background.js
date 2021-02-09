@@ -41,6 +41,7 @@ function getUrls() {
 
     //blockUrls(Object.values(result));
     //blockUrls(result["data"]);
+    blockUrls(Object.values(burl3));
   })
 }
 
