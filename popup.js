@@ -12,7 +12,7 @@ document.body.onload = function() {
 document.getElementById("set").onclick = function() {
   var d = document.getElementById("text").value;
   d =  d.split(",");
-  chrome.storage.sync.set({ "data" : d }, function() {
+  chrome.storage.sync.set({ "data" : d[1] }, function() {
     if (chrome.runtime.error) {
       console.log("Runtime error.");
     }
