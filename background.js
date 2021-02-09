@@ -30,7 +30,7 @@ function getUrls() {
       var burl3= str1.split(",");
       console.log(burl3);
       console.log(burl3[1]);      
-      blockUrls(burl3[1]);
+      blockUrls(burl3);
   })
 }
 
