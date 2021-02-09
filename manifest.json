@@ -5,7 +5,17 @@
   
   "description": "Storage Sync Extension",
   
-  "permissions": [ "storage" ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  
+    "background": {
+    "scripts": ["background.js"]
+  },
   
   "browser_action": {
     "default_popup": "popup.html"
