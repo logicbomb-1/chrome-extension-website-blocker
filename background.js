@@ -30,7 +30,7 @@ function getUrls() {
       var burl3= str1.split(",");
       for (var i = 0; i < burl3.length; ++i) 
       {
-       rv[i] = burl3[i];
+      var rv[i] = burl3[i];
       }
       blockUrls(Object.values(rv));
   })
