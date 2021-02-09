@@ -31,7 +31,9 @@ function getUrls() {
     console.log(result);
     //alert(result);  
       //alert(result["data"]);
-      burl3=  burl1.split(",");
+          var str1 = burl1.toString();  
+
+      burl3=  str1.split(",");
           console.log(burl3);
     alert(burl3);  
 
